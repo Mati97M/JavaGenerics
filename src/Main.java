@@ -4,13 +4,15 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer dick = new SoccerPlayer("dick");
 
-        Team fcBuk = new Team("fcBuck");
+        Team<FootballPlayer> fcBuk = new Team<>("fcBuck");
         fcBuk.addPlayer(joe);
         fcBuk.addPlayer(joe);
-        fcBuk.addPlayer(pat);
-        fcBuk.addPlayer(dick);
+//        fcBuk.addPlayer(pat);
+//        fcBuk.addPlayer(dick);
 
         System.out.println(fcBuk.getNumOfPlayers());
 
+        Team<BaseballPlayer> baseballTeam = new Team<>("fcBat");
+        baseballTeam.addPlayer(pat);
     }
 }
