@@ -14,5 +14,8 @@ public class Main {
 
         Team<BaseballPlayer> baseballTeam = new Team<>("fcBat");
         baseballTeam.addPlayer(pat);
+
+        Team<SoccerPlayer> fcSuccers = new Team<>("fcSuccers");
+        fcSuccers.addPlayer(dick);
     }
 }
