@@ -51,6 +51,7 @@ public class Main {
         footballLeague.addTeam(melbourne);
         footballLeague.addTeam(hawthorn);
         footballLeague.addTeam(fremantle);
+        footballLeague.showLeagueTable();
 
         System.out.println();
         League<Team<BaseballPlayer>> baseballPlayerLeague = new League<>("BaseballLeague");
