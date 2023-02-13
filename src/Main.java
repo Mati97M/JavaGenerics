@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         FootballPlayer joe = new FootballPlayer("joe");
         BaseballPlayer pat = new BaseballPlayer("Pat");
-        SoccerPlayer dick = new SoccerPlayer("dick");
+        SoccerPlayer dick = new SoccerPlayer("Dick");
 
         Team<FootballPlayer> fcBuk = new Team<>("fcBuck");
         fcBuk.addPlayer(joe);
@@ -31,5 +31,16 @@ public class Main {
         fcBuk.matchResult(fremantle,2,1);
 //        fcBuk.matchResult(baseballTeam,1,1);
 
+
+        System.out.println("Rankings:");
+        System.out.println(fcBuk.getName() + ": " + fcBuk.ranking());
+        System.out.println(melbourne.getName() + ": " + melbourne.ranking());
+        System.out.println(fremantle.getName() + ": " + fremantle.ranking());
+        System.out.println(hawthorn.getName() + ": " + hawthorn.ranking());
+
+        System.out.println(fcBuk.compareTo(melbourne));
+        System.out.println(melbourne.compareTo(fcBuk));
+        System.out.println(fcBuk.compareTo(hawthorn));
+        System.out.println(hawthorn.compareTo(fcBuk));
     }
 }

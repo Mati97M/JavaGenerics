@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Team<T extends Player> {
+public class Team<T extends Player> implements Comparable<Team<T>> {
     private String name;
     int played = 0;
     int won = 0;
@@ -55,5 +55,14 @@ public class Team<T extends Player> {
     }
     public int ranking() {
         return won * 2 + tied;
+    }
+
+    @Override
+    public int compareTo(Team<T> tTeam) {
+        if(this.ranking() > tTeam.ranking()) {
+            return -1;
+        } else if(this.ranking() == tTeam.ranking()) {
+            return 0;
+        } else return 1;
     }
 }
