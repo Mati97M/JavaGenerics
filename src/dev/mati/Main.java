@@ -44,5 +44,18 @@ public class Main {
         System.out.println(melbourne.compareTo(fcBuk));
         System.out.println(fcBuk.compareTo(hawthorn));
         System.out.println(hawthorn.compareTo(fcBuk));
+
+        System.out.println();
+        League<Team<FootballPlayer>> footballLeague = new League<>("FootLeague");
+        footballLeague.addTeam(fcBuk);
+        footballLeague.addTeam(melbourne);
+        footballLeague.addTeam(hawthorn);
+        footballLeague.addTeam(fremantle);
+
+        System.out.println();
+        League<Team<BaseballPlayer>> baseballPlayerLeague = new League<>("BaseballLeague");
+        baseballPlayerLeague.addTeam(baseballTeam);
+
+
     }
 }
