@@ -1,3 +1,5 @@
+package dev.mati;
+
 public abstract class Player {
     private String name;
 

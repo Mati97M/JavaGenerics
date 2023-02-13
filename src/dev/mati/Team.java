@@ -1,3 +1,5 @@
+package dev.mati;
+
 import java.util.ArrayList;
 
 public class Team<T extends Player> implements Comparable<Team<T>> {
@@ -19,7 +21,7 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
 
     public boolean addPlayer(T player) {
         if(player == null) {
-            System.out.println("Player must be a  not null value!");
+            System.out.println("dev.mati.Player must be a  not null value!");
             return false;
         }
 
